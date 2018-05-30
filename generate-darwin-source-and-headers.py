@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python2.7
 import subprocess
 import os
 import errno
@@ -11,7 +11,7 @@ class Platform(object):
 
 class simulator_platform(Platform):
     directory = 'darwin_ios'
-    sdk = 'iphonesimulator'
+    sdk = 'iphonesimulator11.3'
     arch = 'i386'
     triple = 'i386-apple-darwin11'
     version_min = '-miphoneos-version-min=7.0'
@@ -24,7 +24,7 @@ class simulator_platform(Platform):
 
 class simulator64_platform(Platform):
     directory = 'darwin_ios'
-    sdk = 'iphonesimulator'
+    sdk = 'iphonesimulator11.3'
     arch = 'x86_64'
     triple = 'x86_64-apple-darwin13'
     version_min = '-miphoneos-version-min=7.0'
@@ -37,7 +37,7 @@ class simulator64_platform(Platform):
 
 class device_platform(Platform):
     directory = 'darwin_ios'
-    sdk = 'iphoneos'
+    sdk = 'iphoneos11.3'
     arch = 'armv7'
     triple = 'arm-apple-darwin11'
     version_min = '-miphoneos-version-min=7.0'
@@ -50,7 +50,7 @@ class device_platform(Platform):
 
 class device64_platform(Platform):
     directory = 'darwin_ios'
-    sdk = 'iphoneos'
+    sdk = 'iphoneos11.3'
     arch = 'arm64'
     triple = 'aarch64-apple-darwin13'
     version_min = '-miphoneos-version-min=7.0'
@@ -63,7 +63,7 @@ class device64_platform(Platform):
 
 class desktop32_platform(Platform):
     directory = 'darwin_osx'
-    sdk = 'macosx'
+    sdk = 'macosx10.13'
     arch = 'i386'
     triple = 'i386-apple-darwin10'
     version_min = '-mmacosx-version-min=10.6'
@@ -76,7 +76,7 @@ class desktop32_platform(Platform):
 
 class desktop64_platform(Platform):
     directory = 'darwin_osx'
-    sdk = 'macosx'
+    sdk = 'macosx10.13'
     arch = 'x86_64'
     triple = 'x86_64-apple-darwin10'
     version_min = '-mmacosx-version-min=10.6'
@@ -177,6 +177,7 @@ def generate_source_and_headers(generate_osx=True, generate_ios=True):
         copy_src_platform_files(desktop64_platform)
 
     platform_headers = collections.defaultdict(set)
+    print platform_headers
 
     if generate_ios:
         build_target(simulator_platform, platform_headers)
@@ -188,7 +189,9 @@ def generate_source_and_headers(generate_osx=True, generate_ios=True):
         build_target(desktop64_platform, platform_headers)
 
     mkdir_p('darwin_common/include')
+
     for header_name, tag_tuples in platform_headers.iteritems():
+
         basename, suffix = os.path.splitext(header_name)
         with open(os.path.join('darwin_common/include', header_name), 'w') as header:
             for tag_tuple in tag_tuples:

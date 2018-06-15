@@ -1,12 +1,12 @@
 //
 //  AppDelegate.m
-//  ffi-iOSDemo
+//  bdffc-iOSDemo
 //
 //  Created by zuopengliu on 30/5/2018.
 //
 
 #import "AppDelegate.h"
-#include <ffi.h>
+#include <bdffc.h>
 
 
 

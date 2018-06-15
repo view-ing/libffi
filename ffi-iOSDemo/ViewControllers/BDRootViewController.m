@@ -1,6 +1,6 @@
 //
 //  BDRootViewController.m
-//  ffi-iOSDemo
+//  bdffc-iOSDemo
 //
 //  Created by zuopengliu on 30/5/2018.
 //
@@ -20,8 +20,8 @@
     self.dataSource = @[
                         @[
                             @{
-                                @"text": @"Test ffi",
-                                @"sel":  NSStringFromSelector(@selector(testFFI)),
+                                @"text": @"Test bdffc",
+                                @"sel":  NSStringFromSelector(@selector(testBDFFC)),
                                 },
                             ]
                         ];
@@ -30,12 +30,12 @@
 - (NSString *)titleAtSection:(NSUInteger)section
 {
     if (section == 0) {
-        return @"Testing libffi ...";
+        return @"Testing libbdffc ...";
     }
     return nil;
 }
 
-- (void)testFFI
+- (void)testBDFFC
 {
     
 }

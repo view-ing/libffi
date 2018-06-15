@@ -1,6 +1,6 @@
 //
 //  BDBaseTableViewController.m
-//  ffi-iOSDemo
+//  bdffc-iOSDemo
 //
 //  Created by zuopengliu on 30/5/2018.
 //
@@ -15,7 +15,7 @@
 {
     [super viewDidLoad];
     
-    self.title = [self titleString] ? : @"libffi-iOSDemo!";
+    self.title = [self titleString] ? : @"libbdffc-iOSDemo!";
     
     [self setupDataSource];
 }

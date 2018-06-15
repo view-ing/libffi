@@ -33,7 +33,7 @@ autom4te.cache
 libffi.xcodeproj/xcuserdata
 libffi.xcodeproj/project.xcworkspace
 build_*/
-darwin_*/
+#darwin_*/
 src/arm/trampoline.S
 **/texinfo.tex
 *.log

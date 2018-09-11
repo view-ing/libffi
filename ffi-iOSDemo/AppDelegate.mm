@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#include <bdffc.h>
+//#include <bdffc.h>
 
 
 
@@ -18,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    CGRect rect1 = CGRectMake(1, 2, 2, 3);
+    CGRect rect2 = CGRectMake(1, 2, 2, 3);
+    
+    CGRect *ptrRect1 = &rect1;
+    CGRect *ptrRect2 = &rect2;
     return YES;
 }
 

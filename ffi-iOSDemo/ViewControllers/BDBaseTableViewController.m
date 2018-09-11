@@ -80,12 +80,12 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 50;
 }
 
 - (CGFloat)sectionHeight
 {
-    return 80;
+    return 70;
 }
 
 - (NSString *)sectionTitle
@@ -137,7 +137,7 @@
     if (text.length == 0) text = [NSString stringWithFormat:@"Row: %ld", (long)indexPath.row];
     if (indexPath.row == (NSInteger)rowDataSource.count) { text = @"Peek"; selname = @"peek"; }
     
-    cell.textLabel.font = [UIFont boldSystemFontOfSize:22];
+    cell.textLabel.font = [UIFont boldSystemFontOfSize:20];
     cell.textLabel.text = text;
     cell.detailTextLabel.text = selname ? [NSString stringWithFormat:@"SEL: %@", selname] : nil;
     return cell;

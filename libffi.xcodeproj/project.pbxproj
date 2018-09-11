@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D18E6B820DB7EE1001A4D28 /* BDDFFCClosure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D18E6B620DB7EE1001A4D28 /* BDDFFCClosure.cpp */; };
 		2DA546FA20BE818500ADEB60 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DA546F920BE818500ADEB60 /* AppDelegate.mm */; };
 		2DA5470020BE818500ADEB60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA546FE20BE818500ADEB60 /* Main.storyboard */; };
 		2DA5470220BE818700ADEB60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA5470120BE818700ADEB60 /* Assets.xcassets */; };
 		2DA5470520BE818700ADEB60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA5470320BE818700ADEB60 /* LaunchScreen.storyboard */; };
 		2DA5470820BE818700ADEB60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5470720BE818700ADEB60 /* main.m */; };
 		2DA5470F20BE820A00ADEB60 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB13B1661849DF1E0010F42D /* libffi.a */; };
-		2DA5471820BE858F00ADEB60 /* BDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5471420BE858F00ADEB60 /* BDRootViewController.m */; };
+		2DA5471820BE858F00ADEB60 /* BDRootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5471420BE858F00ADEB60 /* BDRootViewController.mm */; };
 		2DA5471920BE858F00ADEB60 /* BDBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5471520BE858F00ADEB60 /* BDBaseTableViewController.m */; };
+		2DD622E72147BCEA00872E4E /* TestStructModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD622E52147BCEA00872E4E /* TestStructModel.m */; };
+		2DD622F32147BFE700872E4E /* macho_dlfcn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DD622F02147BFE700872E4E /* macho_dlfcn.cpp */; };
+		2DD622F42147BFE700872E4E /* MachOParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DD622F22147BFE700872E4E /* MachOParser.cpp */; };
 		43B5D3F81D35473200D1E1FD /* ffiw64_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = 43B5D3F71D35473200D1E1FD /* ffiw64_x86_64.c */; };
 		43B5D3FA1D3547CE00D1E1FD /* win64_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = 43B5D3F91D3547CE00D1E1FD /* win64_x86_64.S */; };
 		43E9A5C71D352C1500926A8F /* sysv_i386.S in Sources */ = {isa = PBXBuildFile; fileRef = 43E9A5C51D352C1500926A8F /* sysv_i386.S */; };
@@ -156,6 +160,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D18E6B620DB7EE1001A4D28 /* BDDFFCClosure.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BDDFFCClosure.cpp; sourceTree = "<group>"; };
+		2D18E6B720DB7EE1001A4D28 /* BDDFFCClosure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDDFFCClosure.h; sourceTree = "<group>"; };
 		2DA546F620BE818500ADEB60 /* ffi-iOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ffi-iOSDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA546F820BE818500ADEB60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DA546F920BE818500ADEB60 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -164,10 +170,16 @@
 		2DA5470420BE818700ADEB60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DA5470620BE818700ADEB60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DA5470720BE818700ADEB60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2DA5471420BE858F00ADEB60 /* BDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDRootViewController.m; sourceTree = "<group>"; };
+		2DA5471420BE858F00ADEB60 /* BDRootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BDRootViewController.mm; sourceTree = "<group>"; };
 		2DA5471520BE858F00ADEB60 /* BDBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBaseTableViewController.m; sourceTree = "<group>"; };
 		2DA5471620BE858F00ADEB60 /* BDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRootViewController.h; sourceTree = "<group>"; };
 		2DA5471720BE858F00ADEB60 /* BDBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBaseTableViewController.h; sourceTree = "<group>"; };
+		2DD622E52147BCEA00872E4E /* TestStructModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStructModel.m; sourceTree = "<group>"; };
+		2DD622E62147BCEA00872E4E /* TestStructModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStructModel.h; sourceTree = "<group>"; };
+		2DD622EF2147BFE700872E4E /* MachOParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachOParser.h; sourceTree = "<group>"; };
+		2DD622F02147BFE700872E4E /* macho_dlfcn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = macho_dlfcn.cpp; sourceTree = "<group>"; };
+		2DD622F12147BFE700872E4E /* macho_dlfcn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macho_dlfcn.h; sourceTree = "<group>"; };
+		2DD622F22147BFE700872E4E /* MachOParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MachOParser.cpp; sourceTree = "<group>"; };
 		43B5D3F71D35473200D1E1FD /* ffiw64_x86_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffiw64_x86_64.c; sourceTree = "<group>"; };
 		43B5D3F91D3547CE00D1E1FD /* win64_x86_64.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = win64_x86_64.S; sourceTree = "<group>"; };
 		43E9A5C51D352C1500926A8F /* sysv_i386.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = sysv_i386.S; sourceTree = "<group>"; };
@@ -239,6 +251,8 @@
 		2DA546F720BE818500ADEB60 /* ffi-iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2DD622EE2147BFDE00872E4E /* MachO */,
+				2DD622E42147BCE100872E4E /* Models */,
 				2DA5471320BE858F00ADEB60 /* ViewControllers */,
 				2DA546F820BE818500ADEB60 /* AppDelegate.h */,
 				2DA546F920BE818500ADEB60 /* AppDelegate.mm */,
@@ -261,12 +275,34 @@
 		2DA5471320BE858F00ADEB60 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2DA5471420BE858F00ADEB60 /* BDRootViewController.m */,
+				2DA5471420BE858F00ADEB60 /* BDRootViewController.mm */,
 				2DA5471620BE858F00ADEB60 /* BDRootViewController.h */,
 				2DA5471520BE858F00ADEB60 /* BDBaseTableViewController.m */,
 				2DA5471720BE858F00ADEB60 /* BDBaseTableViewController.h */,
+				2D18E6B620DB7EE1001A4D28 /* BDDFFCClosure.cpp */,
+				2D18E6B720DB7EE1001A4D28 /* BDDFFCClosure.h */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2DD622E42147BCE100872E4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2DD622E62147BCEA00872E4E /* TestStructModel.h */,
+				2DD622E52147BCEA00872E4E /* TestStructModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2DD622EE2147BFDE00872E4E /* MachO */ = {
+			isa = PBXGroup;
+			children = (
+				2DD622F02147BFE700872E4E /* macho_dlfcn.cpp */,
+				2DD622F12147BFE700872E4E /* macho_dlfcn.h */,
+				2DD622F22147BFE700872E4E /* MachOParser.cpp */,
+				2DD622EF2147BFE700872E4E /* MachOParser.h */,
+			);
+			path = MachO;
 			sourceTree = "<group>";
 		};
 		DB13B15B1849DEB70010F42D = {
@@ -564,7 +600,7 @@
 				TargetAttributes = {
 					2DA546F520BE818500ADEB60 = {
 						CreatedOnToolsVersion = 9.3.1;
-						DevelopmentTeam = XXHND5J98K;
+						DevelopmentTeam = CG6329SXZK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -680,10 +716,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DD622F32147BFE700872E4E /* macho_dlfcn.cpp in Sources */,
+				2DD622E72147BCEA00872E4E /* TestStructModel.m in Sources */,
 				2DA5470820BE818700ADEB60 /* main.m in Sources */,
+				2D18E6B820DB7EE1001A4D28 /* BDDFFCClosure.cpp in Sources */,
 				2DA546FA20BE818500ADEB60 /* AppDelegate.mm in Sources */,
+				2DD622F42147BFE700872E4E /* MachOParser.cpp in Sources */,
 				2DA5471920BE858F00ADEB60 /* BDBaseTableViewController.m in Sources */,
-				2DA5471820BE858F00ADEB60 /* BDRootViewController.m in Sources */,
+				2DA5471820BE858F00ADEB60 /* BDRootViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,7 +861,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = XXHND5J98K;
+				DEVELOPMENT_TEAM = CG6329SXZK;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -839,7 +879,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bytedance.ffi-iOSDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bytedance.ffi-iOSDemo111";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -874,7 +914,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = XXHND5J98K;
+				DEVELOPMENT_TEAM = CG6329SXZK;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -887,7 +927,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bytedance.ffi-iOSDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bytedance.ffi-iOSDemo111";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
